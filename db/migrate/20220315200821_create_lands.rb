@@ -4,7 +4,7 @@ class CreateLands < ActiveRecord::Migration[6.1]
       t.string :location
       t.integer :area
       t.integer :price
-      t.references :owner, null: false, foreign_key: { to_table: :users }
+      t.references :owner, null: false, foreign_key: {to_table: :users}
 
       t.timestamps
     end

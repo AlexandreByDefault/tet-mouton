@@ -5,12 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-# éleveurs
-farmer1 = User.create(name: "Bens", firstname:"philibert", email: "p.bens@gmail.com", password:"1234")
+User.destroy_all
+Land.destroy_all
+farmer2 = User.create!(email: "tartes@gmail.com", password:"5678AB")
 # propriétaires
-owner1 = User.create(name: "Boris", firstname:"jean", email: "j.borris@gmail.com", password:"5678")
+owner2 = User.create!(email: "boiseu@gmail.com", password:"1234QS")
 # terrains
-land1 = Land.create(location: "lorrain", area:"500m²", price: 500)
-# réservations
-booking1 = Booking.create(land_id: land1, farmer: farmer1)
+land2 = Land.create!(location: "gros-morne", area: "400m²", price: 900, owner: owner2)
+
+# booking1 = Booking.create(land_id: land1, farmer: farmer1)
