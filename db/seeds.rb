@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # éleveurs
-farmer1 = User.create(name: "Bens", firstname:"philibert", email: "p.bens@gmail.com", password:"1234")
+farmer2 = User.create!(name: "Tartampion", firstname:"Serge", email: "tartes@gmail.com", password:"567890")
 # propriétaires
-owner1 = User.create(name: "Boris", firstname:"jean", email: "j.borris@gmail.com", password:"5678")
+owner2 = User.create!(name: "Boisjoli", firstname:"Eustache", email: "boiseu@gmail.com", password:"123456")
 # terrains
-land1 = Land.create(location: "lorrain", area:"500m²", price: 500)
+land2 = Land.create!(location: "gros-morne", area: "400m²", price: 900)
 # réservations
-booking1 = Booking.create(land_id: land1, farmer: farmer1)
+#booking2 = Booking.create(land2, farmer2)
