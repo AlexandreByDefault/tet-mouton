@@ -1,5 +1,5 @@
 class LandsController < ApplicationController
-  before_action :set_parms_id, only: %I[show destroy update]
+  before_action :set_params_id, only: %I[show edit destroy update]
 
   def index
     @lands = Land.all
@@ -31,7 +31,7 @@ class LandsController < ApplicationController
 
   private
 
-  def set_parms_id
+  def set_params_id
     @land = Land.find(params[:id])
   end
 
