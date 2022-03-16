@@ -1,13 +1,14 @@
 <h1>Nos Terrains</h1>
-
+<div class="d-flex justify-content-between flex-wrap h-100 w-100">
 <% @lands.each do |land| %>
 <div class="card" style="width: 18rem;">
-  <!--<img src="..." class="card-img-top" alt="...">-->
+  <img src="https://images.unsplash.com/photo-1554755209-85e44182e019?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Localisation: <%= land.location %></h5>
-    <p class="card-text">superficie: <%= land.area %>m²</p>
-    <p><%= land.price %>€/mois</p>
-    <a href="#" class="btn btn-primary">En savoir plus</a>
+    <h5 class="card-title">Wasteland</h5>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum vero exercitationem architecto laboriosam adipisci soluta alias nihil neque.</p>
+    <a href="#" class="btn syellow">Book</a>
+    <a href="#" class="btn sgreen">See more</a>
   </div>
 </div>
 <% end %>
+</div>
