@@ -1,16 +1,14 @@
-<div>
-<div class="banner-card">
-<div class="photo-publisher">
-<img src="" alt="">
+<h1>Nos Terrains</h1>
+<div class="d-flex justify-content-between flex-wrap h-100 w-100">
+<% @lands.each do |land| %>
+<div class="card" style="width: 18rem;margin: 8px;">
+  <img src="https://images.unsplash.com/photo-1554755209-85e44182e019?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Wasteland</h5>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum vero exercitationem architecto laboriosam adipisci soluta alias nihil neque.</p>
+    <a href="#" class="btn syellow">Book</a>
+    <a href="#" class="btn sgreen">See more</a>
+  </div>
 </div>
-<h3>user name</h3>
-</div>
-<div class="photo">
-</div>
-<div class="name-description">
-<h2>description</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officiis a excepturi tempore nihil ut.</p>
-</div>
-<button>BOOK</button>
-<button>SEE MORE</button>
+<% end %>
 </div>
