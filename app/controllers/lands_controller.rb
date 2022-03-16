@@ -1,5 +1,5 @@
 class LandsController < ApplicationController
-  before_action :set_params_id, only: %I[show edit destroy update]
+  before_action :set_params_id, only: %i[show edit destroy update]
 
   def index
     @lands = Land.all
