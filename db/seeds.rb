@@ -1,10 +1,16 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-# éleveurs
-farmer3 = User.create(name: "Brice", firstname:"Glace", email: "B.vanille@gmail.com", password:"1237CX")
+
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+farmer2 = User.create(name: "Tartampion", firstname:"Serge", email: "tartes@gmail.com", password:"5678")
 # propriétaires
-owner3 = User.create(name: "Claire", firstname:"delune", email: "demi.croissant@gmail.com", password:"5638BG")
+owner2 = User.create(name: "Boisjoli", firstname:"Eustache", email: "boiseu@gmail.com", password:"1234")
 # terrains
-land3 = Land.create(location: "Morne Rouge", area"700m²", price: 700)
+land2 = Land.create(location: "gros-morne", area: "400m²", price: 900)
 # réservations
-#booking3 = Booking.create(land3, farmer3)
+booking2 = Booking.create(land2, farmer2)
