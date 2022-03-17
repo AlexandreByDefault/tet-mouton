@@ -45,9 +45,3 @@ land7 = Land.create!(location: "sainte-marie", area: "530m²", price: 800, owner
 farmer8 = User.create!(email: 'piegeamiel@gmail.com', password: '2312BV')
 owner8 = User.create!(email: 'leschacales@gmail.com', password: '1267WX')
 land8 = Land.create!(location: "ducos", area: "460m²", price: 750, owner: owner8)
-
-
-
-
-
-
