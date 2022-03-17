@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <a class="navbar-brand font-weight-bold">
 TET'MOUTON</a>
-<a href="#" class="p-2 justify-content-center color-black">ALL</a>
+  <%= link_to "ALL", lands_path, class: 'p-2 justify-content-center color-black' %>
     <form class="d-flex flex-row">
 
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -37,8 +37,8 @@ TET'MOUTON</a>
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+        <%= link_to "EXPLORE!", lands_path, class: 'discover' %>
       </div>
-
     </div>
 
 
@@ -110,7 +110,7 @@ TET'MOUTON</a>
           </h6>
           <p>
             Nous nous déchargeons de tout problemes liées à vos bêtes.
-            Vous êtes responsables de l'état des lieux après utilisations 
+            Vous êtes responsables de l'état des lieux après utilisations
           </p>
         </div>
         <!-- Grid column -->

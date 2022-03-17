@@ -4,7 +4,7 @@
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 0px;
-  margin: 5% 10%;
+  margin: 10%;
   }
   .div1 { grid-area: 1 / 1 / 4 / 4; }
   .div2 { grid-area: 4 / 1 / 6 / 4;   position: relative;}
@@ -19,6 +19,22 @@
     text-align: center;
     font-weight: 600;
     margin: 1rem;
+  }
+
+  .carousel-inner{
+    position: relative;
+  }
+  .discover{
+    display: block;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    bottom:10%;
+    left:40%;
+    font-weight: 500;
   }
 .container-img{
   margin-left: 20%;
