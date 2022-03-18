@@ -4,13 +4,17 @@
 <body>
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand font-weight-bold"> <img src="./logo.svg" alt="logo">
+    <a class="navbar-brand font-weight-bold"> <%= image_tag "logo.svg"%>
 TET'MOUTON</a>
   <%= link_to "ALL", lands_path, class: 'p-2 justify-content-center color-black' %>
     <form class="d-flex flex-row">
 
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Sign in / Sign up</button>
+      <% if user_signed_in? %>
+      <%= link_to "log out", destroy_user_session_path, method: :delete, class:"btn btn-outline-success" %>
+      <% else %>
+      <%= link_to "Sign in", new_user_session_path, class:"btn btn-outline-success" %>
+      <%end %>
     </form>
   </div>
 </nav>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :lands do
     resources :bookings, only: [:create]
   end
-  resources :bookings, only: [:destroy]
+
+  resources :bookings, only: %i[destroy show]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
