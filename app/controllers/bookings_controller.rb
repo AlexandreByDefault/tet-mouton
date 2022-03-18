@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+  before_action :authenticate_user!
 
   def create
     @land = Land.find(params[:land_id])

@@ -7,15 +7,16 @@ Alexandre : show Booking
 <% @booking = Booking.find(params[:id]) %>
 <% @land = @booking.land %>
 <div class="container d-flex justify-content-center mt-2">
+
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+<%= image_tag @land.photo_url, class:"card-img-top" %>
   <div class="card-body">
     <h5 class="card-title">Congrulations ! </h5>
     <p class="card-text">We are pleased to announce that your reservation has been successfully registered </p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Location : <%= @land.location %></li>
-    <li class="list-group-item">superficie : <%= @land.area %></li>
+    <li class="list-group-item">superficie : <%= @land.area %>m²</li>
     <li class="list-group-item">price : <%= @land.price %> $</li>
   </ul>
   <div class="card-body">
