@@ -4,11 +4,25 @@ Karoline trouver comment rendre la Nav Bar un component ?????
 Barbara Aider Karoline
 Alexandre : show Booking
 %>
-
-<div class="container">
-<div class="row">
-<div class="col bg-info col-12">C</div>
-<div class="col bg-info">B</div>
-<div class="col bg-info">A</div>
+<% @booking = Booking.find(params[:id]) %>
+<% @land = @booking.land %>
+<div class="container d-flex justify-content-center mt-2">
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Congrulations ! </h5>
+    <p class="card-text">We are pleased to announce that your reservation has been successfully registered </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Location : <%= @land.location %></li>
+    <li class="list-group-item">superficie : <%= @land.area %></li>
+    <li class="list-group-item">price : <%= @land.price %> $</li>
+  </ul>
+  <div class="card-body">
+    <%= link_to "Thanks you",lands_path, class: "sgreen" %>
+    <%= link_to "Cancel", lands_path, :data => {:confirm => "Are you sure?"}, class: "syellow mt-1" %>
+  </div>
+</div>
+</div>
 </div>
 </div>

@@ -18,7 +18,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   <body>
+  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand font-weight-bold" href='/'>  <%= image_tag "/images/logo.svg"%>
+                                TET'MOUTON</a>
+    <%= link_to "ALL", lands_path, class: 'p-2 justify-content-center color-black' %>
+      <form class="d-flex flex-row">
+
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <% if user_signed_in? %>
+      <%= link_to "log out", destroy_user_session_path, method: :delete, class:"btn btn-outline-success" %>
+      <% else %>
+      <%= link_to "Sign in", new_user_session_path, class:"btn btn-outline-success" %>
+      <%end %>
+    </form>
+  </div>
+  </nav>
     <%= yield %>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
   </body>
