@@ -1,18 +1,19 @@
+
 <h1>Annonce</h1>
 <div class="d-flex justify-content-around mx-5 ombre ">
-<div>
-  <img src="https://images.unsplash.com/photo-1554755209-85e44182e019?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="img-thumbnail w-100" alt="...">
-</div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1554755209-85e44182e019?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="img-thumbnail w-100" alt="...">
+  </div>
   <div class= "d-flex flex-column justify-content-center ms-3 sbordure ps-3 ">
-    <h2>Description</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur dolorem sunt explicabo ut tenetur non cumque excepturi sit? Fugiat nihil deserunt possimus vel, distinctio sit! Corporis cum at repellendus!</p>
-    <div class= "d-flex ">
-      <p>Localisation: <%= @land.location.capitalize %> </p>
-      <p class="px-3">Superficie: <%= @land.area %>m²</p>
-      <p>Prix: <%= @land.price %>/mois</p>
-    </div>
-    <div class="d-flex justify-content-around w-50 ">
-      <%= link_to 'Réserver ?',land_bookings_path(@land), method: :post, class: 'syellow btn' %>
-      <%= link_to 'Retour', lands_path, class: 'sgreen btn' %>
-    </div>
+      <h2>Description</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur dolorem sunt explicabo ut tenetur non cumque excepturi sit? Fugiat nihil deserunt possimus vel, distinctio sit! Corporis cum at repellendus!</p>
+      <div class= "d-flex ">
+        <p>Localisation: <%= @land.location.capitalize %> </p>
+        <p class="px-3">Superficie: <%= @land.area %>m²</p>
+        <p>Prix: <%= @land.price %>/mois</p>
+  </div>
+  <div class="d-flex justify-content-around w-50 ">
+        <%= link_to 'Réserver ?',land_bookings_path(@land), method: :post, class: 'syellow btn' %>
+        <%= link_to 'Retour', lands_path, class: 'sgreen btn' %>
+  </div>
 </div>
