@@ -1,22 +1,6 @@
 
-  <title>Home</title>
-</head>
-<body>
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand font-weight-bold"> <%= image_tag "logo.svg"%>
-TET'MOUTON</a>
-  <%= link_to "ALL", lands_path, class: 'p-2 justify-content-center color-black' %>
-    <form class="d-flex flex-row">
 
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <% if user_signed_in? %>
-      <%= link_to "log out", destroy_user_session_path, method: :delete, class:"btn btn-outline-success" %>
-      <% else %>
-      <%= link_to "Sign in", new_user_session_path, class:"btn btn-outline-success" %>
-      <%end %>
-    </form>
-  </div>
+
 </nav>
   <h2 class="introduction">LOUER DES TERRAINS PRES DE CHEZ VOUS </h2>
   <div class="parent">
@@ -191,4 +175,4 @@ TET'MOUTON</a>
 </footer>
 <!-- Footer -->
   </div>
-</body>
+
